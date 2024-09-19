@@ -1,0 +1,103 @@
+nav{background-color: #091c2b;}
+
+.footer{
+  background-image: linear-gradient(89.5deg, rgb(168 131 255) 0.4%, rgb(30 70 227) 100.3%);
+}
+
+li a {
+  display: inline-block;
+position: relative;
+}
+li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(85, 128, 255);
+  transition: width 0.3s ease;
+}
+li a:hover::before {
+  width: 100%;
+  
+  
+}
+
+.button{
+  background-color:rgb(85, 128, 255);
+}
+
+li a:hover{
+  color:rgb(85, 128, 255);
+}
+
+.flotante{
+  border: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+
+
+.flotante{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+}
+.flotante:hover {
+  transform: translateY(-10px); /* Eleva el botón */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Añade sombra */
+  border: 1px solid rgb(85, 128, 255) ;
+}
+
+.border-blue{
+  border: 1px solid rgb(85, 128, 255) ;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.ourVision{
+  background-color: #f8f9fa;
+}
+
+
+.texto_imagen{
+
+    position: absolute;
+    top: 50%; /* Posiciona el texto en el centro verticalmente */
+    left: 50%; /* Posiciona el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto perfectamente */
+    color: white; /* Cambia el color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Hace el texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para hacer el texto más legible */
+  
+}
+
+.contacto70{
+  line-height: 26px;
+}
+
+.general{
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.porcentaje{
+  background-color: #eef1fd;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.porcentaje_texto{
+  color: #58468c;
+}
+
+.botonFree{
+  background-color: #5580FF;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.frame{
+  border-left:4px solid #5580FF ;
+}
