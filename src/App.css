@@ -24,6 +24,10 @@ li a:hover::before {
   
 }
 
+p{
+  letter-spacing: 0.8px;
+}
+
 .button{
   background-color:rgb(85, 128, 255);
 }
@@ -93,9 +97,12 @@ li a:hover{
 }
 
 .botonFree{
-  background-color: #5580FF;
+  background-color: rgb(85, 128, 255);
   padding: 10px 15px;
   border-radius: 5px;
+}
+.botonFree:hover{
+  background-color: #2c61ff;
 }
 
 .frame{
