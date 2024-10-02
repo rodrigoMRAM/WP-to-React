@@ -1,9 +1,28 @@
+
+
 nav{background-color: #091c2b;}
 
 .footer{
   background-image: linear-gradient(89.5deg, rgb(168 131 255) 0.4%, rgb(30 70 227) 100.3%);
 }
+.cardTestimonio::before{
+  
+    content: '';
+    position: absolute;
+    bottom: -100%; /* Comienza fuera de la vista */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(45deg, #5580FF 0%, #000000 100%); /* Color de fondo al hacer hover */
+    transition: bottom 0.3s ease; /* Suaviza la transición */
+    z-index: -1;
+    color: white;
 
+}
+
+.cardTestimonio:hover::before {
+  bottom: 0; /* Sube el pseudo-elemento */
+}
 li a {
   display: inline-block;
 position: relative;

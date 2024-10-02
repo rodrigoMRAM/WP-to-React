@@ -13,6 +13,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './components/Home';
 import { Contact } from './components/Contact';
+import About from './components/About';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
             <Outlet />
         <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
           {/* <Route path="/users">
             <Users />

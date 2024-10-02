@@ -1,6 +1,10 @@
 import React from 'react'
 import imagen from '../img/code.jpeg'
 import imagenMain from '../img/main.png'
+import CircularProgressCountUp from '../utils/ProgressEffect'
+import ObservedComponent from '../utils/ObserverPrueba'
+import CardToReuse from './CardToReuse'
+
 export const Home = () => {
   return (
     <>
@@ -201,49 +205,11 @@ contract
 
                 </div>
         </div>
-        <div className="porcentaje">
-        <div className="porcentajes h-[600px] flex justify-center items-center">
-            <div className='text-center'>
-                <h1 className='porcentaje_texto'>89%</h1>
-                <h2 className='porcentaje_texto'>Innovations</h2>
-                <p>Are you looking for trust who are ready to.</p>
-            </div>
-            <div className='text-center'>
-                <h1 className='porcentaje_texto'>60%</h1>
-                <h2 className='porcentaje_texto'>Action Plans</h2>
-                <p>Are you looking for trust who are ready to.</p>
-            </div>
-            <div className='text-center'>
-                <h1 className='porcentaje_texto'>66%</h1>
-                <h2 className='porcentaje_texto'>Big Projects</h2>
-                <p>Are you looking for trust who are ready to.</p>
-            </div>
-            <div className='text-center'>
-                <h1 className='porcentaje_texto'>89%</h1>
-                <h2 className='porcentaje_texto'>Great Tests</h2>
-                <p>Are you looking for trust who are ready to.</p>
-            </div>
-   
+        <div>
+            
+<ObservedComponent></ObservedComponent>
         </div>
-        </div>
-        <div className='ourVision '>
-            <div className='h-[500px] flex justify-center'>
-                <div className='banner flex items-center justify-center'>
-                        <div className='frame bg-white pt-14 pb-14 flex items-center shadow-xl px-8'>
-                            <div className='px-8'>
-
-                            <h3 className=' text-3xl'>Beautiful Landing Page with <br />Elements</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. <br />
-                            It is a paradisematic country, in which</p>
-                            </div>
-                        <div>
-                            <button className='botonFree'>TRY IT FOR FREE! </button>
-                        </div>
-                        </div>
-                </div>
-
-            </div>
-        </div>
+    <CardToReuse/>
     </>
   )
 }
