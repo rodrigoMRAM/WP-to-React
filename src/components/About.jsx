@@ -1,6 +1,7 @@
 import React from 'react'
 import imagen from '../img/softwareImg.jpg'
 import CardToReuse from './CardToReuse'
+import CardTestimonial from './CardTestimonial'
 const About = () => {
     return (
         <>
@@ -46,22 +47,15 @@ const About = () => {
             </div>
             <CardToReuse />
 
-            <div className='flex flex-col justify-center items-center bg-slate-300'>
-                <h2 className='font-bold text-2xl mt-10'>Our testimonial</h2>
-                <p className='text-gray-600'>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.
+            <div className='flex flex-col justify-center items-center bg-[#f7f9fb]'>
+                <h2 className='font-bold text-4xl mt-5 mb-5'>Our testimonial</h2>
+                <p className='text-gray-600 mb-5'>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.
 
                 </p>
-                <div>
-                    <div className='cardTestimonio z-40 flex w-[350px] h-72 flex-col justify-between items-center text-center text-gray-600  bg-white py-4 px-4 relative overflow-hidden hover:text-white'>
-                    <span class="material-symbols-outlined text-gray-500 font-thin self-start hover:text-white text-2xl">
-format_quote
-</span>
-                        <h3>Logo</h3>
-                        <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about</p>
-                        <div className='w-[40px] h-[2px] text-gray-600 bg-slate-300'></div>
-                        <p>Shams W.Pawel</p>
-                        <p>Founder & CEO</p>
-                    </div>
+                <div className='flex bg-white'>
+                    <CardTestimonial margin="0"/>
+                    <CardTestimonial margin="mx-4"/>
+                    <CardTestimonial margin="0"/>
                     <div></div>
                     <div></div>
                 </div>
