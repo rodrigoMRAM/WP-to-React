@@ -3,8 +3,8 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer>
-        <div className='w-full  h-64 text-white flex flex-col justify-around footer'>
-            <div className='flex justify-around w-full'>
+        <div className='w-full  h-64 text-white flex flex-col justify-around footer mx:h-auto'>
+            <div className='flex justify-around w-full mx:flex-wrap'>
                 <div className="about">
                     <h4 className='mb-2'>About us</h4>
                     <div className='h-[2px] w-20 bg-white text-white'></div>

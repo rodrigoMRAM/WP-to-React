@@ -27,11 +27,11 @@ export const Home = () => {
             <div className="services">
 
             <div className="mt-24 flex items-center justify-center w-full">
-                <div className="flex w-4/6 items-center flex-wrap">
+                <div className="flex w-4/6 items-center flex-wrap max-md:w-full">
                     <div className="flex flex-col text-center items-center w-[400px] flotante h-[320px] cursor-pointer">
 
                    
-                        <div className='flex flex-col py-10'>
+                        <div className='flex flex-col py-10 max-md:w-full'>
 
                         <div className=''>
                             <span class="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
@@ -84,10 +84,10 @@ partner_exchange
                 <div className='flex flex-col justify-center items-center w-full mt-24 mb-24'>
                 <div className='mb-10'><h2 className='font-bold text-3xl'>Our Mission & Vision</h2></div>
                 <div><p>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.</p></div>
-                <div className='flex flex-col w-3/5'>
-                    <div className='division1 flex'>
+                <div className='flex flex-col flex-wrap w-auto px-[80px] min-w-[900px] max-md:px[10px] '>
+                    <div className='division1 flex flex-wrap'>
 
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className='flex '>
 
                         <div>
@@ -104,7 +104,7 @@ select_check_box
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className="flex">
 
                         <div>
@@ -121,7 +121,7 @@ cardiology
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className='flex'>
 
                         <div>
@@ -137,9 +137,9 @@ apartment
                         </div>
                     </div>
                         </div>
-                    <div className='division2 flex'>
+                    <div className='division2 flex flex-wrap'>
 
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className="flex">
 
                         <div>
@@ -155,7 +155,7 @@ monitoring
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className="flex">
 
                         <div>
@@ -170,7 +170,7 @@ support_agent
                     <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                         </div>
-                    <div className='h-[250px] w-2/5 border-blue rounded flex items-center'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
                         <div className="flex">
 
                         <div>

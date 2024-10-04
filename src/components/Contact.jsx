@@ -10,13 +10,13 @@ export const Contact = () => {
                 <h2 className='font-bold text-3xl mb-5'>
                     Our Branch
                 </h2>
-                <p className='w-5/12 text-center mb-5'>
+                <p className='w-5/12 text-center mb-5 max-md:w-full'>
                     Interested in our IT services or need advice? Then please get in touch and we’ll be glad to help.
                 </p>
             </div>
-            <div className='flex flex-wrap mx:w-full'>
-                <div className='flex flex-col mx:w-full'>
-                    <img className='mx:w-full' src={imagen} alt="" />
+            <div className='flex flex-wrap w-full max-md:justify-center'>
+                <div className='flex flex-col'>
+                    <img className='max-md:items-center max-md:justify-center' width="200px" height="200px" src={imagen} alt="" />
                     <div className='flex flex-col justify-start items-start text-gray-600'>
                         <h3 className='font-bold mt-5 text-black text-3xl'>Parque Patricios</h3>
 
@@ -41,8 +41,8 @@ mail
                         </div>
                     </div>
                 </div>
-                <div className='ml-20 mx:w-full'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.659882583359!2d-58.41195867681205!3d-34.63790581246921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1726627421978!5m2!1ses!2sar"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600px" height="450px"></iframe>
+                <div className='ml-20 max-md:ml-0 max-md:mt-10'>
+                    <iframe className="w-[600px] h-[400px] max-md:w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.659882583359!2d-58.41195867681205!3d-34.63790581246921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1726627421978!5m2!1ses!2sar"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                 </div>
             </div>
             </div>

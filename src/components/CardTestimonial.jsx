@@ -4,7 +4,7 @@ const CardTestimonial = ({margin}) => {
     console.log(margin)
   return (
     <div className={`cardTestimonio z-40 shadow-xl flex mb-16 w-[350px] h-[350px] flex-col ${margin} justify-between items-center text-center text-gray-600 bg-[#fff] py-4 px-4 relative overflow-hidden hover:text-white`}>
-                    <span class="material-symbols-outlined text-gray-500 font-thin self-start hover:text-white text-2xl">
+                    <span class="material-symbols-outlined text-gray-500 font-thin self-start text-4xl hover:text-white text-2xl">
 format_quote
 </span>
                         <h3>Logo</h3>
