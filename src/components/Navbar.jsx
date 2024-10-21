@@ -12,7 +12,7 @@ export const Navbar = () => {
         <ul className="flex font-bold text-white max-sm:flex-col max-sm:absolute max-sm:mtz-50 items-center">
             <li className="ml-10"><Link to="/">Home</Link></li>
             <li className="ml-10"><Link to="/about">About us</Link></li>
-            <li className="ml-10"><Link to="">Pages</Link></li>
+            <li className="ml-10"><Link to="/services">Pages</Link></li>
             <li className="ml-10"><Link to="/contact">Contact</Link></li>
         </ul>
    </nav>

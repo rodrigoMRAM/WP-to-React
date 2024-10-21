@@ -14,6 +14,7 @@ import { Footer } from './components/Footer';
 import { Home } from './components/Home';
 import { Contact } from './components/Contact';
 import About from './components/About';
+import Services from './components/Services';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/services" element={<Services/>}/>
           {/* <Route path="/users">
             <Users />
             </Route>

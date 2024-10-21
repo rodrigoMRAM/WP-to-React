@@ -72,6 +72,12 @@ li a:hover{
   border: 1px solid rgb(85, 128, 255) ;
 }
 
+.circle_rounded{
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Añade sombra */
+
+}
+
+
 .border-blue{
   border: 1px solid rgb(85, 128, 255) ;
   font-size: 16px;
@@ -104,6 +110,7 @@ li a:hover{
 
 .general{
   height: 100vh;
+  background-color: #D6D6D629;
   justify-content: space-between;
 }
 
