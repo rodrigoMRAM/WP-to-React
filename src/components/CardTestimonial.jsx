@@ -14,6 +14,6 @@ format_quote
                         <p>Founder & CEO</p>
                     </div>
   )
-}
+};
 
 export default CardTestimonial
