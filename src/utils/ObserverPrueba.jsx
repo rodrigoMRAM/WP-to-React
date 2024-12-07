@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import CircularProgressCountUp from './ProgressEffect';
+import { Spinner1,Spinner2, Spinner3, Spinner4 } from '../components/spinners/Spinner1';
 
 const ObservedComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,22 +37,22 @@ const ObservedComponent = () => {
                 <div className="porcentaje" ref={ref}>
         <div className="porcentajes h-[600px] flex justify-center items-center">
             <div className='text-center flex flex-col items-center'>
-        {isVisible ? <CircularProgressCountUp color="danger" valorFinal={20}/> : ""}
+        {isVisible ? <Spinner1 color="danger"/> : ""}
                 <h2 className='porcentaje_texto'>Innovations</h2>
                 <p>Are you looking for trust who are ready to.</p>
             </div>
             <div className='text-center flex flex-col items-center'>
-            {isVisible ? <CircularProgressCountUp color="primary" valorFinal={70} /> : ""}
+            {isVisible ? <Spinner2 color="primary" /> : ""}
                 <h2 className='porcentaje_texto'>Action Plans</h2>
                 <p>Are you looking for trust who are ready to.</p>
             </div>
             <div className='text-center flex flex-col items-center'>
-        {isVisible ? <CircularProgressCountUp color="danger" valorFinal={20}/> : ""}
+        {isVisible ? <Spinner3 color="danger"/> : ""}
                 <h2 className='porcentaje_texto'>Big Projects</h2>
                 <p>Are you looking for trust who are ready to.</p>
             </div>
             <div className='text-center flex flex-col items-center'>
-        {isVisible ? <CircularProgressCountUp color="danger" valorFinal={20}/> : ""}
+        {isVisible ? <Spinner4 color="danger" /> : ""}
                 <h2 className='porcentaje_texto'>Great Tests</h2>
                 <p>Are you looking for trust who are ready to.</p>
             </div>

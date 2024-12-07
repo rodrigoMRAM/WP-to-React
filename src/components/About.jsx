@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from '../img/softwareImg.jpg'
+import imagen from '../assets/img/softwareImg.jpg'
 import CardToReuse from './CardToReuse'
 import CardTestimonial from './CardTestimonial'
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
         <>
             <div className='flex tracking-widest'>
                 <div className='w-7/12'>
-                    <img src={imagen} alt="" srcset="" />
+                    <img src={imagen} alt=""  />
                 </div>
                 <div className='flex flex-wrap flex-col w-[40%]'>
                     <h3 className='text-[#5580FF] font-bold'>WELCOME TO</h3>
@@ -19,7 +19,7 @@ const About = () => {
                     <div className='flex'>
                         <div>
 
-                            <span class="material-symbols-outlined mr-5 mt-1">
+                            <span className="material-symbols-outlined mr-5 mt-1 text-5xl">
                                 my_location
                             </span>
                         </div>
@@ -32,7 +32,7 @@ const About = () => {
                     <div className='flex items-start mt-5'>
                         <div>
 
-                            <span class="material-symbols-outlined mr-5 mt-1">
+                            <span className="material-symbols-outlined mr-5 mt-1 text-5xl">
                                 social_leaderboard
                             </span>
                         </div>

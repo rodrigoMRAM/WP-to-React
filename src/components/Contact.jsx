@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from "../img/kraioimg.jpeg"
+import imagen from "../assets/img/kraioimg.jpeg"
 
 export const Contact = () => {
     return (
@@ -21,19 +21,19 @@ export const Contact = () => {
                         <h3 className='font-bold mt-5 text-black text-3xl'>Parque Patricios</h3>
 
                         <div className='flex mt-5'>
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                                 location_on
                             </span>
                             <p>Buenos Aires - Argentina</p>
                         </div>
                         <div className='flex mt-5'>
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
 phone_enabled
 </span>
                         <p>+54 11 2520-9854</p>
                         </div>
                         <div className='flex mt-5'>
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
 mail
 </span>
                         <p>lucas.tula@krakiolabs.com</p>

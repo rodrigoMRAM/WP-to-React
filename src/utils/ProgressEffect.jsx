@@ -7,12 +7,12 @@ import { useRef } from 'react';
 
 export default function CircularProgressCountUp(color, valorFinal) {
 
-
+  
   const { value: value2, reset } = useCountUp({
     isCounting: true,
     duration: 1,
     start: 0,
-    end: 70,
+    end: valorFinal,
   });
 
  

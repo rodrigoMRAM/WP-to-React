@@ -1,21 +1,60 @@
 import React from 'react'
-import imagen from '../img/code.jpeg'
-import imagenMain from '../img/main.png'
+import imagen from '../assets/img/code.jpeg'
+// import imagenMain from '../img/main.png'
 import CircularProgressCountUp from '../utils/ProgressEffect'
 import ObservedComponent from '../utils/ObserverPrueba'
 import CardToReuse from './CardToReuse'
+import '../effect.css'
+import InteractiveBubble from './EffectHome'
+
+
 
 export const Home = () => {
   return (
     <>
-    <div className="w-full lava ">
     <div >
-       <img className="h-[750px] w-full" src={imagenMain} alt="" srcset="" />
+<div className="gradient-bg">
+  <svg 
+       viewBox="0 0 100vw 100vw"
+       xmlns='http://www.w3.org/2000/svg'
+       className="noiseBg"
+       >
+    <filter id='noiseFilterBg'>
+      <feTurbulence 
+                    type='fractalNoise'
+                    baseFrequency='0.6'
+                    stitchTiles='stitch' />
+    </filter>
+
+    <rect
+          width='100%'
+          height='100%'
+          preserveAspectRatio="xMidYMid meet"
+          filter='url(#noiseFilterBg)' />
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" className="svgBlur">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
+  <div className="gradients-container">
+    <div className="g1"></div>
+    <div className="g2"></div>
+    <div className="g3"></div>
+    <div className="g4"></div>
+    <div className="g5"></div>
+    <div className="interactive"></div>
+  </div>
+
     </div>
        <div className="flex flex-col justify-center items-center absolute top-44 w-full h-fit mt-10">
            <div className="flex flex-col justify-center items-center text-center">
                
-               <h2 className="text-5xl font-bold mt-5 text-white flex">Software is a collection of <br /> programs and data.</h2>
+               <h2 className="text-7xl font-bold mt-5 text-white flex">Software is a collection of <br /> programs and data.</h2>
                    <p className="text-center mt-5 text-white leading-6">Programmatically work but low hanging fruit so new economy cross-pollination. <br/>Quick sync new
                     economy onward and upward.</p>
                 </div>
@@ -27,14 +66,14 @@ export const Home = () => {
             <div className="services">
 
             <div className="mt-24 flex items-center justify-center w-full">
-                <div className="flex w-4/6 items-center flex-wrap max-md:w-full">
+                <div className="flex w-4/6 items-center flex-wrap max-md:w-full justify-center">
                     <div className="flex flex-col text-center items-center w-[400px] flotante h-[320px] cursor-pointer">
 
                    
                         <div className='flex flex-col py-10 max-md:w-full'>
 
                         <div className=''>
-                            <span class="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
                             rewarded_ads
                             </span>
                         </div>
@@ -50,7 +89,7 @@ export const Home = () => {
 
                   
                         <div className='py-10'>
-                            <span class="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
 social_leaderboard
 </span>
                             <h5 className="mt-5 font-bold">
@@ -65,7 +104,7 @@ social_leaderboard
 
         
                         <div className='py-10'>
-                            <span class="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
 partner_exchange
 </span>
                             <h5 className="mt-5 font-bold">
@@ -84,7 +123,7 @@ partner_exchange
                 <div className='flex flex-col justify-center items-center w-full mt-24 mb-24'>
                 <div className='mb-10'><h2 className='font-bold text-3xl'>Our Mission & Vision</h2></div>
                 <div><p>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.</p></div>
-                <div className='flex flex-col flex-wrap w-auto px-[80px] min-w-[900px] max-md:px[10px] '>
+                <div className='flex flex-col flex-wrap w-auto px-[80px] max-md:px-[10px] max-md:w-full  '>
                     <div className='division1 flex flex-wrap'>
 
                     <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
@@ -92,7 +131,7 @@ partner_exchange
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 select_check_box
 </span>
                         </div>
@@ -109,7 +148,7 @@ select_check_box
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 cardiology
 </span>
                         </div>
@@ -126,7 +165,7 @@ cardiology
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 apartment
 </span>
                         </div>
@@ -144,7 +183,7 @@ apartment
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 monitoring
 </span>
                         </div>
@@ -160,7 +199,7 @@ monitoring
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 support_agent
 </span>
                         </div>
@@ -175,7 +214,7 @@ support_agent
 
                         <div>
 
-                    <span class="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full">
+                    <span className="material-symbols-outlined p-2 text-[#5580FF] text-5xl border rounded-full mr-4">
 contract
 </span>
                         </div>
@@ -196,7 +235,7 @@ contract
         <div className='w-full h-[300px] relative inline-block '>
 
         <div>
-        <img className="h-[300px] w-full" src={imagen} alt="" srcset="" />
+        <img className="h-[300px] w-full" src={imagen} alt=""  />
         </div>
         <div className="texto_imagen text-center">
               <p>let's Stand Together</p>
