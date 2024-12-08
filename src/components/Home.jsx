@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import imagen from '../assets/img/code.jpeg'
 // import imagenMain from '../img/main.png'
 import CircularProgressCountUp from '../utils/ProgressEffect'
@@ -10,6 +10,19 @@ import InteractiveBubble from './EffectHome'
 
 
 export const Home = () => {
+
+ 
+        const [isHovered, setIsHovered] = useState(false);
+      
+        const handleMouseEnter = (e) => {
+            console.log(e.target.classList.value.includes('mt-5'))
+          setIsHovered(true);
+        };
+      
+        const handleMouseLeave = () => {
+          setIsHovered(false);
+        };
+
   return (
     <>
     <div >
@@ -66,14 +79,14 @@ export const Home = () => {
             <div className="services">
 
             <div className="mt-24 flex items-center justify-center w-full">
-                <div className="flex w-4/6 items-center flex-wrap max-md:w-full justify-center">
-                    <div className="flex flex-col text-center items-center w-[400px] flotante h-[320px] cursor-pointer">
+                <div className="flex w-4/6 items-center flex-wrap max-md:w-full justify-center max-md:gap-4">
+                    <div className="flex flex-col text-center items-center w-[400px] flotante h-[320px] cursor-pointer group " >
 
                    
-                        <div className='flex flex-col py-10 max-md:w-full'>
+                        <div className='flex flex-col py-10 max-md:w-full ' >
 
                         <div className=''>
-                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className={`material-symbols-outlined p-2  text-5xl bg-[#5580FF] border-4 border-[#5580FF] rounded-full text-white group-hover:text-[#5580FF] group-hover:bg-white  duration-200`}>
                             rewarded_ads
                             </span>
                         </div>
@@ -85,11 +98,11 @@ export const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col text-center items-center w-[400px] ml-4 mr-4 border flotante h-[320px] cursor-pointer">
+                    <div className="flex flex-col text-center items-center w-[400px] ml-4 mr-4 border flotante h-[320px] cursor-pointer group">
 
                   
                         <div className='py-10'>
-                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className={`material-symbols-outlined p-2  text-5xl bg-[#5580FF] border-4 border-[#5580FF] rounded-full text-white group-hover:text-[#5580FF] group-hover:bg-white duration-200`}>
 social_leaderboard
 </span>
                             <h5 className="mt-5 font-bold">
@@ -100,11 +113,11 @@ social_leaderboard
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col text-center items-center w-[400px]  flotante h-[320px] cursor-pointer">
+                    <div className="flex flex-col text-center items-center w-[400px]  flotante h-[320px] cursor-pointer group">
 
         
                         <div className='py-10'>
-                            <span className="material-symbols-outlined p-2 text-white text-5xl bg-[#5580FF] border-2 border-[#5580FF] rounded-full hover:bg-white hover:text-[#5580FF] duration-200">
+                            <span className={`material-symbols-outlined p-2  text-5xl bg-[#5580FF] border-4 border-[#5580FF] rounded-full text-white group-hover:text-[#5580FF] group-hover:bg-white duration-200`}>
 partner_exchange
 </span>
                             <h5 className="mt-5 font-bold">
@@ -122,11 +135,11 @@ partner_exchange
             <div className="ourVision flex w-full mt-24">
                 <div className='flex flex-col justify-center items-center w-full mt-24 mb-24'>
                 <div className='mb-10'><h2 className='font-bold text-3xl'>Our Mission & Vision</h2></div>
-                <div><p>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.</p></div>
-                <div className='flex flex-col flex-wrap w-auto px-[80px] max-md:px-[10px] max-md:w-full  '>
-                    <div className='division1 flex flex-wrap'>
+                <div className='max-md:w-[90%] mb-4'><p className='text-center'>Standards compliant e-business.Phosfluorescently expedite functional products via <br />premium action items wireless innovation compliant e-business.</p></div>
+                <div className='flex flex-col flex-wrap w-full px-[80px] max-md:px-[10px] max-md:w-full items-center max-md:gap-4'>
+                    <div className='flex flex-wrap max-md:w-full max-md:gap-4'>
 
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full  max-md:m-auto'>
                         <div className='flex '>
 
                         <div>
@@ -143,7 +156,7 @@ select_check_box
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -160,7 +173,7 @@ cardiology
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className='flex'>
 
                         <div>
@@ -176,9 +189,9 @@ apartment
                         </div>
                     </div>
                         </div>
-                    <div className='division2 flex flex-wrap'>
+                    <div className='division2 flex flex-wrap max-md:gap-4'>
 
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -194,7 +207,7 @@ monitoring
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -209,7 +222,7 @@ support_agent
                     <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full'>
+                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
