@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import imagen from '../assets/img/code.jpeg'
 // import imagenMain from '../img/main.png'
 import CircularProgressCountUp from '../utils/ProgressEffect'
@@ -11,17 +11,6 @@ import InteractiveBubble from './EffectHome'
 
 export const Home = () => {
 
- 
-        const [isHovered, setIsHovered] = useState(false);
-      
-        const handleMouseEnter = (e) => {
-            console.log(e.target.classList.value.includes('mt-5'))
-          setIsHovered(true);
-        };
-      
-        const handleMouseLeave = () => {
-          setIsHovered(false);
-        };
 
   return (
     <>
@@ -79,7 +68,7 @@ export const Home = () => {
             <div className="services">
 
             <div className="mt-24 flex items-center justify-center w-full">
-                <div className="flex w-4/6 items-center flex-wrap max-md:w-full justify-center max-md:gap-4">
+                <div className="flex max-w-screen-xl items-center flex-wrap max-md:w-full justify-center max-md:gap-4">
                     <div className="flex flex-col text-center items-center w-[400px] flotante h-[320px] cursor-pointer group " >
 
                    
@@ -137,9 +126,9 @@ partner_exchange
                 <div className='mb-10'><h2 className='font-bold text-3xl'>Our Mission & Vision</h2></div>
                 <div className='max-md:w-[90%] mb-4'><p className='text-center'>Standards compliant e-business.Phosfluorescently expedite functional products via <br />premium action items wireless innovation compliant e-business.</p></div>
                 <div className='flex flex-col flex-wrap w-full px-[80px] max-md:px-[10px] max-md:w-full items-center max-md:gap-4'>
-                    <div className='flex flex-wrap max-md:w-full max-md:gap-4'>
+                    <div className='flex flex-wrap max-md:w-full max-md:gap-4 max-w-screen-xl'>
 
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full  max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full  max-md:m-auto'>
                         <div className='flex '>
 
                         <div>
@@ -156,7 +145,7 @@ select_check_box
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -173,7 +162,7 @@ cardiology
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className='flex'>
 
                         <div>
@@ -189,9 +178,9 @@ apartment
                         </div>
                     </div>
                         </div>
-                    <div className='division2 flex flex-wrap max-md:gap-4'>
+                    <div className='division2 flex flex-wrap max-md:gap-4 max-w-screen-xl'>
 
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -207,7 +196,7 @@ monitoring
                         </div>
                     </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>
@@ -222,7 +211,7 @@ support_agent
                     <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                         </div>
-                    <div className='h-[250px] w-[280px] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
+                    <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
                         <div className="flex">
 
                         <div>

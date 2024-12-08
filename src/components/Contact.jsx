@@ -4,7 +4,7 @@ import imagen from "../assets/img/kraioimg.jpeg"
 export const Contact = () => {
     return (
         <div className='w-full flex justify-center mb-16 flex-wrap items-center text-center mt-7 contact'>
-            <div className='contacto70'>
+            <div className='leading-[23px]'>
 
             <div className='text-center flex flex-col justify-center items-center'>
                 <h2 className='font-bold text-3xl mb-5'>

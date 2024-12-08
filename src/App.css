@@ -106,9 +106,6 @@ li a:hover{
   
 }
 
-.contacto70{
-  line-height: 26px;
-}
 
 .general{
   height: 100vh;
@@ -121,8 +118,17 @@ li a:hover{
   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 }
 
+@media screen and (max-width: 600px) {
+  .porcentaje {
+    clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+  }
+}
+
 .porcentaje_texto{
   color: #58468c;
+  font-size: 22px;
+    font-weight: 400;
+    line-height: 54px;
 }
 
 .botonFree{

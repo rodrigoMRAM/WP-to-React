@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import CircularProgressCountUp from './ProgressEffect';
-import { Spinner1,Spinner2, Spinner3, Spinner4 } from '../components/spinners/Spinner1';
+import { Spinner1,Spinner2, Spinner3, Spinner4 } from '../components/Spinners/Spinner1';
 
 const ObservedComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +10,6 @@ const ObservedComponent = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         // Cambia el estado basado en la visibilidad del elemento
-        setcolor("danger")
         setIsVisible(entry.isIntersecting);
       },
       {
@@ -34,27 +32,27 @@ const ObservedComponent = () => {
 
   return (
 
-                <div className="porcentaje h-[600px]" ref={ref}>
-        <div className="porcentajes h-[600px] flex justify-center items-center flex-wrap ">
-            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full'>
+                <div className="porcentaje  max-md:h-auto" ref={ref}>
+        <div className="porcentajes h-[600px] flex justify-center max-md:h-auto items-center flex-wrap max-md:w-auto max-md:py-20">
+            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full max-md:h-[200px]'>
         {isVisible ? <Spinner1 color="danger"/> : ""}
                 <h2 className='porcentaje_texto'>Innovations</h2>
-                <p>Are you looking for trust who are ready to.</p>
+                <p className='text-[#716c80]'>Are you looking for trust who are ready to.</p>
             </div>
-            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full'>
+            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full max-md:h-[200px]'>
             {isVisible ? <Spinner2 color="primary" /> : ""}
                 <h2 className='porcentaje_texto'>Action Plans</h2>
-                <p>Are you looking for trust who are ready to.</p>
+                <p className='text-[#716c80]'>Are you looking for trust who are ready to.</p>
             </div>
-            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full'>
+            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full max-md:h-[200px]'>
         {isVisible ? <Spinner3 color="danger"/> : ""}
                 <h2 className='porcentaje_texto'>Big Projects</h2>
-                <p>Are you looking for trust who are ready to.</p>
+                <p className='text-[#716c80]'>Are you looking for trust who are ready to.</p>
             </div>
-            <div className='text-center flex flex-col items-center  max-md:w-full'>
+            <div className='text-center flex flex-col items-center w-[300px] max-md:w-full max-md:h-[200px]'>
         {isVisible ? <Spinner4 color="danger" /> : ""}
                 <h2 className='porcentaje_texto'>Great Tests</h2>
-                <p>Are you looking for trust who are ready to.</p>
+                <p className='text-[#716c80]'>Are you looking for trust who are ready to.</p>
             </div>
    
         </div>
