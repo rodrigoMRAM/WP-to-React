@@ -2,7 +2,7 @@ import React from 'react'
 import KrakioLogo from '../assets/img/krakioImg.png'
 const CardTestimonial = ({margin}) => {
   return (
-    <div className={`cardTestimonio z-40 shadow-xl flex mb-16 w-[350px] h-[350px] flex-col ${margin} justify-between items-center text-center text-gray-600 bg-[#fff] py-4 px-4 relative overflow-hidden hover:text-white`}>
+    <div className={`cardTestimonio z-40 shadow-xl flex mb-16 w-[350px] h-[460px] flex-col ${margin} justify-between items-center text-center text-gray-600 bg-[#fff] py-4 px-4 relative overflow-hidden hover:text-white`}>
                     <span className="material-symbols-outlined text-gray-200 font-thin self-start text-6xl hover:text-white">
 format_quote
 </span>

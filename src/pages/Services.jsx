@@ -3,9 +3,9 @@ import { useState } from 'react'
 import Computer from '../assets/computer.svg'
 import Pencil from '../assets/pencilRule.svg'
 import Person from '../assets/person_headphone.svg'
-import SVGComputer from './SVGComponents/SvgComputer'
-import SVGPencil from './SVGComponents/SvgPencil'
-import SVGPerson from './SVGComponents/SvgPerson'
+import SVGComputer from '../components/SVGComponents/SvgComputer'
+import SVGPencil from '../components/SVGComponents/SvgPencil'
+import SVGPerson from '../components/SVGComponents/SvgPerson'
 
 
 const Services = () => {
