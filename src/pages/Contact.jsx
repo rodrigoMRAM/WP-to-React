@@ -15,7 +15,7 @@ export const Contact = () => {
                 </p>
             </div>
             <div className='flex flex-wrap w-full max-md:justify-center'>
-                <div className='flex flex-col'>
+                <div className='flex flex-col max-sm:items-center'>
                     <img className='max-md:items-center max-md:justify-center' width="200px" height="200px" src={imagen} alt="" />
                     <div className='flex flex-col justify-start items-start text-gray-600'>
                         <h3 className='font-bold mt-5 text-black text-3xl'>Parque Patricios</h3>
