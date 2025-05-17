@@ -3,14 +3,14 @@ import imagen from "../assets/img/kraioimg.jpeg"
 
 export const Contact = () => {
     return (
-        <div className='w-full flex justify-center mb-16 flex-wrap items-center text-center mt-7 contact'>
+        <div className='w-full flex justify-center  flex-wrap items-center text-center py-20 contact'>
             <div className='leading-[23px]'>
 
-            <div className='text-center flex flex-col justify-center items-center'>
+            <div className='text-center flex flex-col justify-center items-center mb-4'>
                 <h2 className='font-bold text-3xl mb-5'>
                     Our Branch
                 </h2>
-                <p className='w-5/12 text-center mb-5 max-md:w-full'>
+                <p className='w-6/12 text-center mb-5 max-md:w-full text-[#333333]'>
                     Interested in our IT services or need advice? Then please get in touch and we’ll be glad to help.
                 </p>
             </div>

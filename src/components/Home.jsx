@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from '../assets/img/code.jpeg'
+import imagen from '../assets/img/pcBackground.jpg'
 // import imagenMain from '../img/main.png'
 import CircularProgressCountUp from '../utils/ProgressEffect'
 import ObservedComponent from '../utils/ObserverPrueba'
@@ -15,9 +15,9 @@ export const Home = () => {
   return (
     <>
     <div >
-<div className="gradient-bg">
+<div className="gradient-bg w-full">
 
-<img src={BackgroundImg} alt="" srcset="" />
+<img src={BackgroundImg} alt="" srcset="" className='w-full' />
 
     </div>
        <div className="flex flex-col justify-center items-center absolute top-44 w-full h-fit mt-10">
@@ -27,7 +27,7 @@ export const Home = () => {
                    <p className="text-center mt-5 text-white leading-6">Programmatically work but low hanging fruit so new economy cross-pollination. <br/>Quick sync new
                     economy onward and upward.</p>
                 </div>
-                <div className="mt-5"><button className="rounded button py-2 px-2 text-white font-medium transition delay-100 hover:bg-white hover:text-black">Learn More</button>
+                <div className="mt-5"><button className="text-[14px] uppercase tracking-[1.4px] border-0 rounded-[25px] button py-2 px-2 pt-[18px] pr-[38px] pb-[18px] pl-[38px] text-white font-medium transition delay-100 hover:bg-white hover:text-[#5580FF]">Learn More</button>
                     </div>
                     
                 </div>
@@ -49,7 +49,7 @@ export const Home = () => {
                             <h5 className="mt-5 font-bold">
                                 Cognitive Automation
                             </h5>
-                            <p>
+                            <p className='text-[#606060]'>
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                             </p>
                         </div>
@@ -64,7 +64,7 @@ social_leaderboard
                             <h5 className="mt-5 font-bold">
                                 Cognitive Automation
                             </h5>
-                            <p>
+                            <p className='text-[#606060]'>
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                             </p>
                         </div>
@@ -79,7 +79,7 @@ partner_exchange
                             <h5 className="mt-5 font-bold">
                                 Cognitive Automation
                             </h5>
-                            <p>
+                            <p className='text-[#606060]'>
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                             </p>
                         </div>
@@ -91,7 +91,7 @@ partner_exchange
             <div className="ourVision flex w-full mt-24">
                 <div className='flex flex-col justify-center items-center w-full mt-24 mb-24'>
                 <div className='mb-10'><h2 className='font-bold text-3xl'>Our Mission & Vision</h2></div>
-                <div className='max-md:w-[90%] mb-4'><p className='text-center'>Standards compliant e-business.Phosfluorescently expedite functional products via <br />premium action items wireless innovation compliant e-business.</p></div>
+                <div className='max-md:w-[90%] mb-4 text-[#606060]'><p className='text-center'>Standards compliant e-business.Phosfluorescently expedite functional products via <br />premium action items wireless innovation compliant e-business.</p></div>
                 <div className='flex flex-col flex-wrap w-full px-[80px] max-md:px-[10px] max-md:w-full items-center max-md:gap-4'>
                     <div className='flex flex-wrap max-md:w-full max-md:gap-4 max-w-screen-xl'>
 
@@ -108,7 +108,7 @@ select_check_box
 
                         <h3 className='font-bold'>
                         Social Security</h3>
-                        <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                        <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
                         </div>
                     </div>
                         </div>
@@ -125,7 +125,7 @@ cardiology
 
                         <h3 className='font-bold'>Medical Service
                         </h3>
-                        <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                        <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
                         </div>
                     </div>
                         </div>
@@ -141,7 +141,7 @@ apartment
                         <div>
 
                         <h3 className='font-bold'>Foreign Policy</h3>
-                    <p >Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
+                    <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                     </div>
                         </div>
@@ -159,7 +159,7 @@ monitoring
                         <div>
 
                         <h3 className='font-bold'>Country Economic</h3>
-                        <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                        <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
                         </div>
                     </div>
                         </div>
@@ -175,7 +175,7 @@ support_agent
                         <div>
 
                         <h3 className='font-bold'>Women Rights</h3>
-                    <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
+                    <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                         </div>
                     <div className='h-[250px] w-[30%] border-blue rounded flex items-center max-md:w-full max-md:m-auto'>
@@ -192,7 +192,7 @@ contract
 
                         <h3 className='font-bold'>
                     Focus on Education</h3>
-                    <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
+                    <p className='text-[#606060]'>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p></div>
                         </div>
                     </div>
                         </div>
@@ -203,8 +203,8 @@ contract
         </div>
         <div className='w-full h-[300px] relative inline-block '>
 
-        <div>
-        <img className="h-[300px] w-full" src={imagen} alt=""  />
+        <div className=''>
+        <img className="h-[300px] w-full object-cover brightness-50" src={imagen} alt=""  />
         </div>
         <div className="texto_imagen text-center">
               <p>let's Stand Together</p>

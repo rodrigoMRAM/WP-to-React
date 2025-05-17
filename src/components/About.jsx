@@ -1,5 +1,6 @@
 import React from 'react'
 import imagen from '../assets/img/softwareImg.jpg'
+import imagenBackground from '../assets/img/img_aboutUs.webp'
 import CardToReuse from './CardToReuse'
 import KrakioLogo from '../assets/img/krakioImg.png'
 
@@ -13,17 +14,28 @@ const About = () => {
 
     return (
         <>
-            <div className='flex tracking-widest max-sm:justify-center '>
-                <div className='w-7/12 max-sm:hidden'>
+            <div className='flex tracking-widest max-md:justify-center max-w-[1140px] mx-auto py-20'>
+                <div className='w-7/12 max-md:hidden relative'>
+                    <div className='w-[90%] h-[90%]'>
+                    <img src={imagenBackground} alt="" />
+                    </div>
+                    <div className='absolute bottom-[-50px] right-0 max-w-[60%]'>
+
                     <img src={imagen} alt="" />
+                    </div>
                 </div>
-                <div className='flex flex-wrap flex-col w-[40%] max-sm:w-[95%] items-center justify-center max-sm:pt-10'>
-                    <h3 className='text-[#5580FF] font-bold max-sm:text-center'>WELCOME TO</h3>
-                    <h2 className='text-2xl font-bold text-gray-950 max-sm:text-center'>About Company
+                <div className='flex flex-wrap flex-col w-[40%] max-sm:w-[95%] items-start justify-start max-sm:pt-10'>
+                    <div className='self-start'>
+
+                    <h3 className='text-[#5580FF] font-extrabold max-sm:text-center'>WELCOME TO</h3>
+                    <h2 className='text-3xl font-extrabold text-gray-950 max-sm:text-center mb-8'>About Company
                     </h2>
-                    <p className='w-[90%] text-center'>Are constantly thriving to improve our already high standards to have you see us as the absolute best in the industry. It’s not enough to have trust in the cleaning.
+                    </div>
+                    <p className='w-[90%] text-[#5f5f5f] leading-[26px]'>Are constantly thriving to improve our already high standards to have you see us as the absolute best in the industry. It’s not enough to have trust in the cleaning.
 
                     </p>
+                    <div className='flex flex-col'>
+
                     <div className='flex'>
                         <div>
 
@@ -33,8 +45,8 @@ const About = () => {
                         </div>
                         <div>
 
-                            <h3 className='text-xl font-bold mb-5 text-gray-800'>Our Mission</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                            <h3 className='text-xl font-extrabold mb-5 text-gray-800'>Our Mission</h3>
+                            <p className='text-[#5f5f5f] leading-[26px]'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                         </div>
                     </div>
                     <div className='flex items-start mt-5'>
@@ -46,10 +58,11 @@ const About = () => {
                         </div>
                         <div>
 
-                            <h3 className='text-xl font-bold text-gray-800 mb-5'>Our Vission</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                            <h3 className='text-xl font-extrabold text-gray-800 mb-5'>Our Vission</h3>
+                            <p className='text-[#5f5f5f] leading-[26px]'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                         </div>
 
+                    </div>
                     </div>
                 </div>
             </div>
@@ -57,7 +70,7 @@ const About = () => {
 
             <div className='flex flex-col justify-center items-center bg-[#f7f9fb]'>
                 <h2 className='font-bold text-4xl mt-5 mb-5'>Our testimonial</h2>
-                <p className='text-gray-600 mb-5'>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.
+                <p className='text-gray-600 mb-5 mx-24 text-center'>Standards compliant e-business.Phosfluorescently expedite functional products via premium action items wireless innovation compliant e-business.
 
                 </p>
                 <div className='flex gap-5 max-sm:flex-col flex-wrap'>
@@ -73,7 +86,7 @@ const About = () => {
                                 <h3>{card.title}</h3>
                                 <p>{card.content}</p>
                                 <div className='w-[40px] h-[2px] text-gray-600 bg-slate-300'></div>
-                                <p>{card.name}</p>
+                                <p className='text-black text-xl font-bold'>{card.name}</p>
                                 <p>{card.position}</p>
                             </div>
                         </div>

@@ -18,7 +18,7 @@ const Services = () => {
         <div className='flex mb-14 mt-14 '>
         <div>
             <p className='mt-5 text-blue-400 font-bold text-center'>WHAT WE DO</p>
-            <h3 className='mt-5 text-4xl font-bold'>OUR SERVICES</h3>
+            <h3 className='mt-5 text-4xl font-bold'>Our Service</h3>
         </div>
 
         </div>
@@ -36,7 +36,7 @@ const Services = () => {
             <div>
 
             <p className='mb-5 font-bold group-hover:text-[#0693e3] duration-300'>QA Consulting</p>
-            <p>Analysis, planning and execution of tests according to the needs of your business. Applying processes and techniques based on ISTQB standards</p>
+            <p className='text-[#656565] leading-5'>Analysis, planning and execution of tests according to the needs of your business. Applying processes and techniques based on ISTQB standards</p>
             </div>
         </div>
 
@@ -51,7 +51,7 @@ const Services = () => {
             <div>
 
             <p className='mb-5 font-bold group-hover:text-[#9b51e0] duration-300'>Implementation of Automated Tests </p>
-            <p>
+            <p className='text-[#656565] leading-5'>
             Feasibility, costs and maintenance of automated testing frameworks such as Selenium, Playwright and Cypress
             </p>
             </div>
@@ -69,7 +69,7 @@ const Services = () => {
             <div>
 
             <p className='mb-5 font-bold group-hover:text-[#7bdcb5] duration-300'>Test Equipment Training</p>
-            <p>Evaluation of the QA team, Definition of quality processes, Policies, Strategies, Test Plans and career plan for each of the members. Based on TMMi maturity model</p>
+            <p className='text-[#656565] leading-5'>Evaluation of the QA team, Definition of quality processes, Policies, Strategies, Test Plans and career plan for each of the members. Based on TMMi maturity model</p>
             </div>
         </div>
     </div>

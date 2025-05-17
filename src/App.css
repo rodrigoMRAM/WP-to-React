@@ -115,7 +115,7 @@ li a:hover{
 
 .porcentaje{
   background-color: #eef1fd;
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
 }
 
 @media screen and (max-width: 600px) {
@@ -133,7 +133,7 @@ li a:hover{
 
 .botonFree{
   background-color: rgb(85, 128, 255);
-  padding: 10px 15px;
+  padding : 21px 55px 21px 55px;
   border-radius: 5px;
 }
 .botonFree:hover{
@@ -166,7 +166,13 @@ li a:hover{
 }
 
 body{
-  font-family: "Fira Sans", serif;
+  font-family: "Open Sans", Sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto{
+  font-family: "Roboto", Sans-serif;
   font-weight: 400;
   font-style: normal;
 }
